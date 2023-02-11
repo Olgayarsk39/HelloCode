@@ -8,17 +8,15 @@ a = -3 b = 9 -> нет
 
 Console.Clear();
 Console.Write("Введите число a = ");
-int number1 = int.Parse(Console.ReadLine());
-
+int a = int.Parse(Console.ReadLine());
 Console.Write("Введите число b = ");
-int number = int.Parse(Console.ReadLine());
-int sqr = Convert.ToInt32(Math.Pow(number, 2));
-
-if (number1 == sqr)
+int b = int.Parse(Console.ReadLine());
+Console.WriteLine($"{Math.Pow(b, 2) == a}");
+if (Math.Pow(b, 2) == a)
 {
-    Console.WriteLine($"-> да");
+    Console.WriteLine("а квадрат в");
 }
 else
 {
-    Console.WriteLine($"-> нет");
+    Console.WriteLine("а не является квадратом в");
 }
